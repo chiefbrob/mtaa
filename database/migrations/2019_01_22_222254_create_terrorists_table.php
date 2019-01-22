@@ -15,6 +15,10 @@ class CreateTerroristsTable extends Migration
     {
         Schema::create('terrorists', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name',50);
+            $table->string('image'50)->default('avatar.png');
+            $table->string('description',500);
+            $table->string('string',20)->default('active');
             $table->timestamps();
         });
     }
