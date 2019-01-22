@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "KE\\": "app/"
+            "Dabotap\\": "app/"
         },
         "classmap": [
             "database/seeds",

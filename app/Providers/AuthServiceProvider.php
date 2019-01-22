@@ -1,6 +1,6 @@
 <?php
 
-namespace KE\Providers;
+namespace Dabotap\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'KE\Model' => 'KE\Policies\ModelPolicy',
+        'Dabotap\Model' => 'Dabotap\Policies\ModelPolicy',
     ];
 
     /**

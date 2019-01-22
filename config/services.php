@@ -31,7 +31,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => KE\User::class,
+        'model' => Dabotap\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
         'webhook' => [

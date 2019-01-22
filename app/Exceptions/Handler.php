@@ -1,6 +1,6 @@
 <?php
 
-namespace KE\Exceptions;
+namespace Dabotap\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

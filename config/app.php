@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Dabotap'),
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Africa/Nairobi',
 
     /*
     |--------------------------------------------------------------------------
@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        KE\Providers\AppServiceProvider::class,
-        KE\Providers\AuthServiceProvider::class,
-        // KE\Providers\BroadcastServiceProvider::class,
-        KE\Providers\EventServiceProvider::class,
-        KE\Providers\RouteServiceProvider::class,
+        Dabotap\Providers\AppServiceProvider::class,
+        Dabotap\Providers\AuthServiceProvider::class,
+        // Dabotap\Providers\BroadcastServiceProvider::class,
+        Dabotap\Providers\EventServiceProvider::class,
+        Dabotap\Providers\RouteServiceProvider::class,
 
     ],
 

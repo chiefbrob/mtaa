@@ -1,6 +1,6 @@
 <?php
 
-namespace KE\Console;
+namespace Dabotap\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

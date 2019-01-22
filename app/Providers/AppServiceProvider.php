@@ -1,6 +1,6 @@
 <?php
 
-namespace KE\Providers;
+namespace Dabotap\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
