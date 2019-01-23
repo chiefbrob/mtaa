@@ -29,7 +29,6 @@ class ApiController extends Controller
 
             case "updateProfileImage":
 
-                dd($request->all());
 
                 if(isset(Auth::user()->id) && $request->hasFile('image')){
                     $user = Auth::user();

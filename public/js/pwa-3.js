@@ -223,6 +223,7 @@ function _refreshUser(){
 function updateProfileImage(){
     console.log("Image uploading");
     $('#profileImageToken').val(_getToken());
+    //$('#profileImageForm').submit();
     $('#profileImageForm').ajaxForm({
         success: function(res,status,xhr,form){
             if(res == 0)
@@ -734,7 +735,7 @@ $('#tryRegister').click(function(){
     $('#registerText').removeClass('hidden');
     $('#tryRegister').addClass('hidden');
 
-    return $("#registerForm").submit();
+    //return $("#registerForm").submit();
 
     $("#registerForm").ajaxForm({
         success: function(res,status,xhr,form){

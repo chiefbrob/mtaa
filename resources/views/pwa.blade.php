@@ -474,7 +474,7 @@
 
     </div>
 
-    <script src="js/pwa-2.js"></script>
+    <script src="js/pwa-3.js"></script>
 
     
     
