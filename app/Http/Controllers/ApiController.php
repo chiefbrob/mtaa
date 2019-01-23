@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Image;
 use Dabotap\Contact;
+use Dabotap\Tip;
 
 class ApiController extends Controller
 {
@@ -73,6 +74,19 @@ class ApiController extends Controller
                 ]);
 
                 if($c)
+                    return 0;
+                return 1;
+                
+                break;
+
+            case "tip-text":
+
+                $tip = Tip::create([
+                    'cat_id' => 1,
+                    'description' => $request->content
+                ]);
+
+                if($tip)
                     return 0;
                 return 1;
                 

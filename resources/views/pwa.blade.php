@@ -372,7 +372,38 @@
                 
             </div>
 
-            <div class="application-view telephone hidden" name="telephone"></div>
+            <div class="application-view telephone hidden" name="telephone">
+                
+                <h5 class="middle">The Big Brother</h5>
+                <br>
+                <div class="telephone-quick">
+                    <a class="telephone-police" href="tel://999">
+                        <i class="fa fa-car"></i> <br>Call Police
+                    </a>
+                    <a class="telephone-hosi" href="tel://999">
+                        <i class="fa fa-heart"></i> <br> Ambulence
+                    </a>
+                    <a class="telephone-help goToPage" href="tel://911">
+                        <i class="fa fa-users"></i> <br> Request help
+                    </a>
+                </div>
+                <br style="clear:both">
+                <hr>
+                <div class="telephone-exposed">
+                    <h6>Use this panel to send tips to intelligence</h6>
+                    <br style="clear:both">     
+                    <button class="btn btn-sm btn-primary">Send Media <i class="fa fa-camera"></i></button>
+                    <button class="btn btn-sm btn-success">Send Audio <i class="fa fa-microphone"></i></button>
+                    <br style="clear:both">
+                    <br style="clear:both">
+                    <br style="clear:both">
+                    <textarea class="form-control" id="tip-text" placeholder="Type and press enter to send"></textarea>
+                    <br style="clear:both">
+
+                    <hr>
+                </div>
+
+            </div>
             <div class="application-view users hidden" name="users"></div>
 
             <div class="application-view profile hidden" name="profile">
@@ -443,7 +474,7 @@
 
     </div>
 
-    <script src="js/pwa.js"></script>
+    <script src="js/pwa-1.js"></script>
 
     
     

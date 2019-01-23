@@ -436,36 +436,7 @@ function _telephoneWatch(){
 	//link to record audio and send to exposed pool
 	//link to message group members
 
-	var $contents = ''+
-	'<h5 class="middle">The Big Brother</h5>'+
-	'<br><div class="telephone-quick">'+
-		'<a class="telephone-police" href="tel://999">'+
-			'<i class="fa fa-car"/> <br>Call Police'+
-		'</a>'+
-		'<a class="telephone-hosi" href="tel://999">'+
-			'<i class="fa fa-heart"/> <br> Ambulence'+
-		'</a>'+
-		'<a class="telephone-help goToPage" href="tel://911">'+
-			'<i class="fa fa-users"/> <br> Request help'+
-		'</a>'+
-	'</div>'+
-	'<br style="clear:both">'+
-	'<hr>'+
-	'<div class="telephone-exposed">'+
-		'<h6>Use this panel to send tips to intelligence</h6>'+
-		'<br style="clear:both">'+		
-		'<button class="btn btn-sm btn-primary">Send Media <i class="fa fa-camera"/></button>'+
-		'<button class="btn btn-sm btn-success">Send Audio <i class="fa fa-microphone"/></button>'+
-		'<br style="clear:both">'+
-		'<br style="clear:both">'+
-		'<br style="clear:both">'+
-		'<textarea class="form-control" placeholder="Type and press enter to send"></textarea>'+
-		'<br style="clear:both">'+
-
-		'<hr>'+
-	'</div>';
-
-	$('.telephone').append($contents);
+	
 	console.log('telephone Ready');
 
 }
@@ -785,4 +756,47 @@ $('#tryRegister').click(function(){
 
         }
     }).submit();   
+});
+
+$('#tip-text').on('keypress',function(e){
+    var key = e.keyCode;
+    var content = $('#tip-text').val();
+
+    if(key == 13)
+    {
+        if( content.length < 10 )
+        {
+            error('Minimum 10 characters');
+            return;
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: '/api/tip-text',
+            data: {_token: _getToken(), content: content },
+            success: function(response) {
+                
+                if(response == 0)
+                {
+                    notify("Tip sent. Also, call the police on 999");
+                    $('#tip-text').val('');
+                }
+                else
+                {
+                    error('Something happened on our end');
+                }
+                
+                              
+                
+                
+                    
+            },
+            error: function() {
+                
+                error('Tip was not sent, retry');
+                
+                
+            },
+        });
+    }
 });
