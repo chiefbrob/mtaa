@@ -376,7 +376,7 @@ function _watchTower(){
 		'<input type="text" maxlength="140" id="compose" class="form-control" autofocus="autofocus" placeholder="Type and press enter to send"/>'+
 	'</div>';
 
-	$('.users').append($contents);
+	$('.users').append( '<H4 class="middle">NYUMBA KUMI CHAT</h4><p class="middle">Coming soon</h4>' );
 	console.log('Watch Tower Ready');
 
 	$('.users-body').height(window.innerHeight * 0.65);
@@ -414,7 +414,7 @@ function _terrorList(){
 			'</div>';
 
 			$('.terror').children().remove();
-			$('.terror').append($contents);
+			$('.terror').append('<h4>WANTED SUSPECTS!!</h4><p class="middle">coming soon</h4>');
 
             
             
