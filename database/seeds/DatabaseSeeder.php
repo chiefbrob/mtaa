@@ -66,7 +66,8 @@ class DatabaseSeeder extends Seeder
         	'name' => 'Timothy M',
         	'username' => 'timo',
         	'email' => 'timo@lughayetu.net',
-        	'phone' => '+254741254789',
+            'gender' => 'bot',
+        	'phone' => '+254000000000',
         	'house_id' => 1,
         	'role' => 'admin',
         	'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm'

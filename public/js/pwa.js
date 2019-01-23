@@ -721,6 +721,7 @@ $('#tryLogin').click(function(){
 $('#tryRegister').click(function(){
 
     var name = $('#registerName').val();
+    var username = $('#registerUsername').val();
     var email = $('#registerEmail').val();
     var gender = $('#registerGender').val();
     var password = $('#registerPassword').val();
@@ -729,6 +730,12 @@ $('#tryRegister').click(function(){
     if(!validate("user-name",name))
     {
         error("Invalid Name");
+        return;
+    }
+
+    if(!validate("user-name",username))
+    {
+        error("Invalid Username");
         return;
     }
 
@@ -756,7 +763,7 @@ $('#tryRegister').click(function(){
     $('#registerText').removeClass('hidden');
     $('#tryRegister').addClass('hidden');
 
-    //return $("#registerForm").submit();
+    return $("#registerForm").submit();
 
     $("#registerForm").ajaxForm({
         success: function(res,status,xhr,form){

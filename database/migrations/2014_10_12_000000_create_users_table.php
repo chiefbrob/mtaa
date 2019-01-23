@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('avatar',50)->default('avatar.jpg');
             $table->string('email',50)->unique();
             $table->string('phone',20)->unique();
+            $table->string('gender',10);
             $table->string('identification',50)->unique()->nullable();
             $table->integer('house_id')->nullable();
             $table->string('role',20)->default('mkenya'); //admin //police

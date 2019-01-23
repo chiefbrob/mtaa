@@ -281,19 +281,25 @@
                     @csrf
                     <h5>
                         Full Name:
-                        <input type="text"id="registerName" name="name" class="form-control">
+                        <input type="text"id="registerName" name="name" class="form-control" maxlength="50">
+                    </h5>
+                    <br>
+
+                    <h5>
+                        Username:
+                        <input type="text" id="registerUsername" name="username" class="form-control" maxlength="20">
                     </h5>
                     <br>
 
                     <h5>
                         Phone:
-                        <input type="text" id="registerPhone" name="phone" class="form-control" maxlength="20">
+                        <input type="number" id="registerPhone" name="phone" class="form-control" maxlength="20">
                     </h5>
                     <br>
 
                     <h5>
                         E-mail address:
-                        <input type="text" id="registerEmail" name="email" class="form-control">
+                        <input type="email" id="registerEmail" name="email" class="form-control">
                     </h5>
                     <br>
 
