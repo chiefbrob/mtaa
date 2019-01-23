@@ -800,3 +800,7 @@ $('#tip-text').on('keypress',function(e){
         });
     }
 });
+
+$('.telephone-exposed').children('button').click(function(){
+    notify('Coming soon. stay tuned');
+});
