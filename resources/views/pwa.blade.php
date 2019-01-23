@@ -187,12 +187,6 @@
 
                 <br>
 
-                <div>
-                    <h6>
-                        To recharge your account, use till number XXXXXX
-                    </h6>
-                </div>
-
             </div>
 
 
@@ -208,7 +202,7 @@
                 
                 <br>
                 <h6 class="middle"> 
-                    Welcome to Dabotap Security Framework 
+                    Dabotap Security Framework 
                 </h6>
                 <br>
 
