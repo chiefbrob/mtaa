@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap\Http\Middleware;
+namespace Mtaa\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

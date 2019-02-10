@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,15 +11,15 @@ class Group extends Model
     ];
 
     public function messages(){
-    	return $this->hasMany('Dabotap\Message');
+    	return $this->hasMany('Mtaa\Message');
     }
 
     public function estate(){
-    	return $this->belongsTo('Dabotap\Estate');
+    	return $this->belongsTo('Mtaa\Estate');
     }
 
     public function user(){
-    	return $this->belongsTo('Dabotap\User');
+    	return $this->belongsTo('Mtaa\User');
     }
 
 }

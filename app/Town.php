@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class Town extends Model
     ];
 
     public function estates(){
-    	return $this->hasMany('Dabotap\Estate');
+    	return $this->hasMany('Mtaa\Estate');
     }
 
 }

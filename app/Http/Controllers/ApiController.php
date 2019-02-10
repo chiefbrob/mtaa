@@ -1,13 +1,13 @@
 <?php
 
-namespace Dabotap\Http\Controllers;
+namespace Mtaa\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 use Auth;
 use Image;
-use Dabotap\Contact;
-use Dabotap\Tip;
+use Mtaa\Contact;
+use Mtaa\Tip;
 
 class ApiController extends Controller
 {

@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    Dabotap\Http\Kernel::class
+    Mtaa\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    Dabotap\Console\Kernel::class
+    Mtaa\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Dabotap\Exceptions\Handler::class
+    Mtaa\Exceptions\Handler::class
 );
 
 /*

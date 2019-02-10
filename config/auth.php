@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Dabotap\User::class,
+            'model' => Mtaa\User::class,
         ],
 
         // 'users' => [

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,19 +11,19 @@ class Estate extends Model
     ];
 
     public function groups(){
-    	return $this->hasMany('Dabotap\Group');
+    	return $this->hasMany('Mtaa\Group');
     }
 
     public function user(){
-    	return $this->belongsTo('Dabotap\User');
+    	return $this->belongsTo('Mtaa\User');
     }
 
     public function town(){
-    	return $this->belongsTo('Dabotap\Town');
+    	return $this->belongsTo('Mtaa\Town');
     }
 
     public function houses(){
-        return $this->hasMany('Dabotap\House');
+        return $this->hasMany('Mtaa\House');
     }
     
 }

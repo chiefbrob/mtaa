@@ -1,8 +1,8 @@
 <?php
 
-namespace Dabotap\Http\Controllers\Auth;
+namespace Mtaa\Http\Controllers\Auth;
 
-use Dabotap\Http\Controllers\Controller;
+use Mtaa\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller

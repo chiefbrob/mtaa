@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Dabotap\Providers\AppServiceProvider::class,
-        Dabotap\Providers\AuthServiceProvider::class,
-        // Dabotap\Providers\BroadcastServiceProvider::class,
-        Dabotap\Providers\EventServiceProvider::class,
-        Dabotap\Providers\RouteServiceProvider::class,
+        Mtaa\Providers\AppServiceProvider::class,
+        Mtaa\Providers\AuthServiceProvider::class,
+        // Mtaa\Providers\BroadcastServiceProvider::class,
+        Mtaa\Providers\EventServiceProvider::class,
+        Mtaa\Providers\RouteServiceProvider::class,
 
     ],
 

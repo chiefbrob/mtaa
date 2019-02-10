@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap\Http\Middleware;
+namespace Mtaa\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Fideloper\Proxy\TrustProxies as Middleware;

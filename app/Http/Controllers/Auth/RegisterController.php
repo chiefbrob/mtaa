@@ -1,9 +1,9 @@
 <?php
 
-namespace Dabotap\Http\Controllers\Auth;
+namespace Mtaa\Http\Controllers\Auth;
 
-use Dabotap\User;
-use Dabotap\Http\Controllers\Controller;
+use Mtaa\User;
+use Mtaa\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -62,7 +62,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \Dabotap\User
+     * @return \Mtaa\User
      */
     protected function create(array $data)
     {

@@ -1,9 +1,9 @@
 
 Usalama wako, waanzia kwako
 
-## About Dabotap Framework
+## About Mtaa App
 
-Dabotap Framework is an opensource real time security app for neighbours working with authorities. 
+Mtaa app is an opensource real time security app for neighbours working with authorities. 
 
 ## Contributing
 
@@ -11,7 +11,7 @@ Thank you for considering contributing to the Dabotap framework! To contribute, 
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Brian Obare via [brianobare@gmail.com](mailto:brianobare@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Mtaa app, please send an e-mail to Brian Obare via [brianobare@gmail.com](mailto:brianobare@gmail.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 

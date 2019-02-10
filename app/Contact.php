@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Database\Eloquent\Model;
 

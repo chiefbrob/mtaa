@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,10 +11,10 @@ class Message extends Model
     ];
 
     public function user(){
-    	return $this->belongsTo('Dabotap\User');
+    	return $this->belongsTo('Mtaa\User');
     }
 
     public function group(){
-    	return $this->belongsTo('Dabotap\Group');
+    	return $this->belongsTo('Mtaa\Group');
     }
 }

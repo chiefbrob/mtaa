@@ -13,3 +13,7 @@ Route::get('/admin/{endpoint}', 'AdminController@handle')->name('getadmin');
 Route::post('/admin/{endpoint}', 'AdminController@handle')->name('postadmin');
 
 
+Route::group(['middleware' => 'cors'], function() {
+   Route::post('/web-api/{endpoint}', 'ApiController@handle');
+
+});

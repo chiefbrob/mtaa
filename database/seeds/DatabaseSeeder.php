@@ -1,14 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Dabotap\User;
-use Dabotap\Town;
-use Dabotap\Estate;
-use Dabotap\House;
-use Dabotap\Group;
-use Dabotap\Term;
-use Dabotap\Tip;
-use Dabotap\Cat;
+use Mtaa\User;
+use Mtaa\Town;
+use Mtaa\Estate;
+use Mtaa\House;
+use Mtaa\Group;
+use Mtaa\Term;
+use Mtaa\Tip;
+use Mtaa\Cat;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         Term::create([
-            'contents' => 'Dabotap Security Framework is an application that when used appropriately would boost your own security. You are required to respect Kenyans resolution to fight crime with this application, and other modes. Misuse of this application would be prosecuted'
+            'contents' => 'Mtaa Security Framework is an application that when used appropriately would boost your own security. You are required to respect Kenyans resolution to fight crime with this application, and other modes. Misuse of this application would be prosecuted'
         ]);
 
         Cat::create([

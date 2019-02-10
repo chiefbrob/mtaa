@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap\Http\Middleware;
+namespace Mtaa\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

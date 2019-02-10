@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap\Http\Controllers;
+namespace Mtaa\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

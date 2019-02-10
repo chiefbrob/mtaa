@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,6 @@ class Cat extends Model
     ];
 
     public function tips(){
-    	return $this->hasMany('Dabotap\Tip');
+    	return $this->hasMany('Mtaa\Tip');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -39,6 +39,6 @@ class User extends Authenticatable
     }
 
     public function house(){
-        return $this->hasOne('Dabotap\House');
+        return $this->hasOne('Mtaa\House');
     }
 }

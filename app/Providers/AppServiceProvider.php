@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap\Providers;
+namespace Mtaa\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

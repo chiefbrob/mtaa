@@ -1,6 +1,6 @@
 <?php
 
-namespace Dabotap;
+namespace Mtaa;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,6 @@ class Tip extends Model
     ];
 
     public function cat(){
-    	return $this->belongsTo('Dabotap\Cat');
+    	return $this->belongsTo('Mtaa\Cat');
     }
 }
