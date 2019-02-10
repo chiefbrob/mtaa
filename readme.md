@@ -7,7 +7,7 @@ Mtaa app is an opensource real time security app for neighbours working with aut
 
 ## Contributing
 
-Thank you for considering contributing to the Dabotap framework! To contribute, send an email to the developer [brianobare@gmail.com](mailto:brianobare@gmail.com).
+Thank you for considering contributing to the Mtaa framework! To contribute, send an email to the developer [brianobare@gmail.com](mailto:brianobare@gmail.com).
 
 ## Security Vulnerabilities
 

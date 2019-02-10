@@ -1,7 +1,7 @@
 
-console.log("Dabotap Security Framework v1.01");
+console.log("Mtaa Security Framework v1.01");
 
-var dabotap = {
+var Mtaa = {
 	user: false,
 	terrorists: false,
 	view: 'splash',
@@ -55,7 +55,7 @@ function logout(){
         success: function(response) {
             
             notify("You have been logged out");
-            dabotap.user = false;
+            Mtaa.user = false;
 
             setTimeout(function(){
                 location.reload();
@@ -144,7 +144,7 @@ function _showView(name){
 
     updateBackButton(name);
 
-    dabotap.view = name;
+    Mtaa.view = name;
 
 	return true;
 }
@@ -157,7 +157,7 @@ function _goToPage(page){
 			break;
 
         case "admin":
-            if(dabotap.user.role == "admin")
+            if(Mtaa.user.role == "admin")
             {
 
                 window.location = '/admin/home';
@@ -181,7 +181,7 @@ function _refreshUser(){
         success: function(user) {
                             
             
-            dabotap.user = user;
+            Mtaa.user = user;
 			console.log('User refreshed');
 
             var $p = ''+
@@ -196,8 +196,8 @@ function _refreshUser(){
             $('.profile-header').append($p);
 
             $('#editProfile').click(function(){
-                $('#editProfileName').val(dabotap.user.name);
-                $('#editProfilePhone').val(dabotap.user.phone);
+                $('#editProfileName').val(Mtaa.user.name);
+                $('#editProfilePhone').val(Mtaa.user.phone);
                 showView("editProfile");
             });
 
@@ -205,7 +205,7 @@ function _refreshUser(){
                 $('#profileImageUploader').click();
             });
 
-            if(dabotap.user.role == "admin")
+            if(Mtaa.user.role == "admin")
             {
                 $('.openAdmin').removeClass('hidden');
             }
@@ -393,7 +393,7 @@ function _terrorList(){
         success: function(terrorists) {
                             
             
-            dabotap.terrorists = terrorists;
+            Mtaa.terrorists = terrorists;
 			console.log('Terrorists loaded');
 
 			var $contents = ''+
@@ -443,7 +443,7 @@ function _telephoneWatch(){
 }
 
 function authenticated(){
-	if(dabotap.user == false)
+	if(Mtaa.user == false)
 	{
 		$('#application-footer').addClass('hidden');
 		return false;
@@ -454,7 +454,7 @@ function authenticated(){
 
 function showView(name){
 
-    if(dabotap.view == name)
+    if(Mtaa.view == name)
     {
         console.log("View change aborted");
         return false;
@@ -500,7 +500,7 @@ function showView(name){
             break;
 
         case "admin":
-            if(authenticated() && dabotap.user.role == 'admin')
+            if(authenticated() && Mtaa.user.role == 'admin')
             {
                 return  window.location = '/';
             }
@@ -571,7 +571,7 @@ function startApp(){
 
 
 function _boot(){
-	console.log("Dabotap booting...");
+	console.log("Mtaa booting...");
 
 	$.ajax({
         type: 'POST',

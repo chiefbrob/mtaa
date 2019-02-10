@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Mtaa\Term;
 
-class DabotapController extends Controller
+class MtaaController extends Controller
 {
     public function pwa($page = 'welcome', Request $request)
     {

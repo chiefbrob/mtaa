@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Dabotap Security Framework</title>
+        <title>Mtaa Security Framework</title>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
         <meta name="csrf-token" id="meta-csrf" content="{{ csrf_token() }}">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="Dabotap">
+        <meta name="apple-mobile-web-app-title" content="Mtaa">
 
         <link rel="icon" href="images/logo100.png">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
@@ -152,7 +152,7 @@
                 <br>
 
                 <h6>
-                    Dabotap is a kenyan civilian security management framework that allows groups to stay abreast of security in their estates. It enables you to send police anonymous tips, converse with fellow Nyumba Kumi members and much more
+                    Mtaa is a kenyan civilian security management framework that allows groups to stay abreast of security in their estates. It enables you to send police anonymous tips, converse with fellow Nyumba Kumi members and much more
                 </h6>
 
                 <br>
@@ -202,7 +202,7 @@
                 
                 <br>
                 <h6 class="middle"> 
-                    Dabotap Security Framework 
+                    Mtaa Security Framework 
                 </h6>
                 <br>
 
@@ -211,7 +211,7 @@
                 <br><br>
 
                 <h6 style="text-align: center;">
-                	Dabotap enables you to stay on top of your own security by leveraging ICT and good citizenship. It enables you to stay abreast with developments around your 'Nyumba Kumi', contact police anonymously, manage your estate's security and much more. 
+                	Mtaa enables you to stay on top of your own security by leveraging ICT and good citizenship. It enables you to stay abreast with developments around your 'Nyumba Kumi', contact police anonymously, manage your estate's security and much more. 
                     <br>
                     Security starts with you
                 </h6>
@@ -238,7 +238,7 @@
 
                 <form method="post" action="/login" id="loginForm">
                     @csrf
-                    <h4>Dabotap Login</h4>
+                    <h4>Mtaa Login</h4>
                     <br><br>
                     <h5>
                         Username:
@@ -276,7 +276,7 @@
             <div class="application-view register hidden" name="register">
                 <br>
                 <form method="post" action="/register" id="registerForm">
-                    <h4>Dabotap Registration</h4>
+                    <h4>Mtaa Registration</h4>
                     <br><br>
                     @csrf
                     <h5>
